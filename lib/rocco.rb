@@ -252,6 +252,11 @@ class Rocco
       :heredoc => "<<-"
     },
     "scheme"        =>  { :single => ";;",  :multi => nil, :heredoc => nil },
+    "sml"           =>  {
+      :single => nil,
+      :multi => { :start => '(*', :middle => nil, :end => '*)' },
+      :heredoc => nil
+    },
     "xml"           =>  {
       :single => nil,
       :multi => { :start => '<!--', :middle => nil, :end => '-->' },
